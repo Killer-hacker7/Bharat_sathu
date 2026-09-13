@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+}
+
+@theme inline {
+  --color-saffron: #C0392B;
+  --color-saffron-light: #FDECEA;
+  --color-saffron-mid: #E74C3C;
+  --color-forest: #1E6B45;
+  --color-forest-light: #E8F5EE;
+  --color-forest-mid: #27AE60;
+  --color-slate: #2C3E50;
+  --color-slate-light: #F7F8FA;
+  --color-muted: #6B7280;
+  --color-border: #E5E7EB;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar { display: none; }
+scrollbar-width: none;
+
+.hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+
+.tab-active { color: #1E6B45; }
+.tab-inactive { color: #9CA3AF; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.pulse-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+@keyframes voice-bar {
+  0%, 100% { height: 4px; }
+  50% { height: 20px; }
+}
+.voice-bar { animation: voice-bar 0.8s ease-in-out infinite; }
+.voice-bar:nth-child(2) { animation-delay: 0.1s; }
+.voice-bar:nth-child(3) { animation-delay: 0.2s; }
+.voice-bar:nth-child(4) { animation-delay: 0.3s; }
+.voice-bar:nth-child(5) { animation-delay: 0.15s; }

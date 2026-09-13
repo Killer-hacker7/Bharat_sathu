@@ -1,0 +1,10 @@
+{
+  "description": "Facilitates safe, de-congested travel across India by recommending verified low-crowd sites, local insights, and real-time AI-guided itineraries.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
